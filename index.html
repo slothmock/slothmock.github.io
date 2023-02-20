@@ -7,5 +7,26 @@
     <body> 
         <h1>My Static Website</h1> 
         <p> Hello, I'm online, and everyone can see me! </p> 
+        <button onClick="pay();">Pay</button>
+
+<script src="https://sdk.paylike.io/10.js"></script>
+<script>
+  const paylike = Paylike({key: '594b1949-2b6b-410e-9482-741c02dbf777'})
+
+  function pay(){
+    paylike.pay(
+      {
+        test: true,
+        amount: {currency: 'GBP', exponent: 2, value: 3499},
+        custom: {orderId: 1234},
+      },
+      (err, result) => {
+        if (err) return console.log(err)
+        console.log(result.transaction.id)
+        location.href = '/';
+      }
+    )
+  }
+</script>
     </body> 
 </html>
