@@ -1,7 +1,31 @@
 <!DOCTYPE html> 
 <html> 
     <head> 
-        <title>Donate!</title> 
+        <title>Donate!</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                background-color: #000000;
+                color: #ffffff;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            h1 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            button {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style> 
     </head> 
     <body> 
         <h1>Donation Page</h1> 
@@ -23,7 +47,7 @@
     paylike.pay(
       {
         test: true,
-        amount: {currency: 'GBP', exponent: 2, value: 3499},
+        amount: {currency: 'GBP', exponent: 2, value: 2499},
         custom: {orderId: 1234},
       },
       (err, result) => {
