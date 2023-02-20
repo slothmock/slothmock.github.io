@@ -17,8 +17,8 @@
             }
             img {
                 display: inline-block;
-                margin-left: 50%;
-                margin-right: 50%;
+                margin-left: auto;
+                margin-right: auto;
             }
             button {
                 display: block;
@@ -33,14 +33,14 @@
         <p> If any of my projects have helped, or you're just feeling generous
         then please consider donating to me.
         </p><hr>
-        <img src="https://sdk.paylike.io/visa.svg" alt="Paylike" width="100" height="100">
-        <img src="https://sdk.paylike.io/mastercard.svg" alt="Paylike" width="100" height="100">
+        <img src="https://sdk.paylike.io/visa.svg" alt="visa" width="100" height="100">
+        <img src="https://sdk.paylike.io/mastercard.svg" alt="mastercard" width="100" height="100">
         <hr>
         <button onClick="pay();">Pay</button>
 
 <script src="https://sdk.paylike.io/10.js"></script>
 <script>
-  const paylike = Paylike({key: '594b1949-2b6b-410e-9482-741c02dbf777'})
+  const paylike = Paylike({key: '6f02f6cc-092d-4cfd-9ef2-dee17b301598'})
 
   function pay(){
     paylike.pay(
