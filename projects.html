@@ -29,7 +29,10 @@
     </section>
 	<br>
     <footer>
-        <p>&copy; 2025 Jordan Mock</p>
+        <p>&copy; <span id="year"></span> Jordan Mock</p>
     </footer>
 </body>
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </html>
