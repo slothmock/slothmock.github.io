@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Mock | Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="assets/js/main.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-container" data-aos="fade-in">
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+            <div class="theme-toggle-container">
+                <button type="button" class="theme-toggle" id="theme-toggle">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <img src="assets/img/profile.png" alt="Hero Avatar" class="hero-avatar" onerror="this.onerror=null;this.src='assets/img/placeholder.svg';">
+        <h1>Jordan Mock</h1>
+        <p class="hero-subtitle">Software Engineer | Entrepreneur | Crypto Enthusiast</p>
+        <div class="hero-card" id="open-modal">
+            <h3>Featured Project: Caves Of Crisis</h3>
+            <p>Explore the development of a Python-based roguelike game leveraging the use of Pygame, NumPy, and PyYAML</p>
+        </div>
+    </section>
+
+    <div class="modal" id="modal-roguelike" data-aos="fade-in">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Caves Of Crisis - Roguelike Game</h3>
+            Caves of Crisis is a roguelike adventure where players navigate procedurally generated caves, balancing survival stats and engaging in creative item interactions through the "Think it, do it" system. With dynamic status effects, strategic combat, and real-time progression, each descent offers a challenging and unpredictable journey.
+            <div class="skill-bars">
+                <div class="skill">
+                    <span>Python</span>
+                    <div class="skill-bar">
+                        <div class="skill-level python"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Multiprocessing</span>
+                    <div class="skill-bar">
+                        <div class="skill-level multiprocessing"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Software Planning</span>
+                    <div class="skill-bar">
+                        <div class="skill-level software-planning"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Research</span>
+                    <div class="skill-bar">
+                        <div class="skill-level research"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <a href="https://github.com/slothmock/caves-of-crisis" target="_blank" rel="noopener" class="github-button">
+                    <button type="button" class="github-link">View on GitHub 🚀</button>
+                </a>
+                <a href="/projects/caves-of-crisis" class="project-button">
+                    <button type="button" class="project-link">Learn More 🎮</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            <p>&copy; <span id="current-year"></span> Jordan Mock. All rights reserved.</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://github.com/slothmock" target="_blank" rel="noopener"><img src="assets/img/socials/square-github.svg" alt="GitHub"></a>
+            <a href="https://x.com/slothmock1" target="_blank" rel="noopener"><img src="assets/img/socials/square-x.svg" alt="LinkedIn"></a>
+        </div>
+    </footer>
+</body>
+</html>
