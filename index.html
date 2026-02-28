@@ -1,7 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jordan 'sloth' Mock</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sloth Ledger — Legal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Sloth Ledger — Legal</h1>
+    <p>Policies and support information for the Sloth Ledger mobile app.</p>
+
+    <div class="card">
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </div>
+
+    <footer class="muted">
+      <p>Last updated: <span id="lastUpdated"></span></p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("lastUpdated").textContent =
+      new Date(document.lastModified).toLocaleDateString();
+  </script>
+</body>
 </html>
