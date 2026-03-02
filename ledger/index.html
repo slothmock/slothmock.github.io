@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sloth Ledger</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <main class="container">
+    <a class="back" href="../index.html">← Back</a>
+    <h1>Sloth’s Ledger App</h1>
+
+    <p>
+      Sloth’s Ledger is a manual personal finance app built for clarity, privacy, and control.
+    </p>
+
+    <div class="card">
+      <h2>How It Works</h2>
+      <p>
+        Accounts are created manually and transactions are entered by the user.
+        There is no bank connection and no automatic syncing.
+        Every balance exists because it was recorded.
+      </p>
+      <p>
+        Transactions are grouped by day with a running total,
+        making it easy to understand how money moves.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Subscriptions</h2>
+      <p>
+        A built-in subscription tracker shows upcoming payments,
+        highlights overdue items, and can automatically create
+        a ledger entry when marked as paid.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Philosophy</h2>
+      <p>
+        This project is developed independently and evolves over time.
+        It is designed to stay simple and intentional.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Support</h2>
+      <p>
+        Follow the link below for some FAQs and App Support.
+      </p>
+
+      <p>
+        <a href="support.html">Support and Contact</a>
+      </p>
+    </div>
+
+    <footer class="muted">
+      <p>Contact: <a href="mailto:slothmock1@proton.me">slothmock1@proton.me</a></p>
+      <p>Last updated: <span id="lastUpdated"></span></p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("lastUpdated").textContent =
+      new Date(document.lastModified).toLocaleDateString();
+  </script>
+</body>
+
+</html>
