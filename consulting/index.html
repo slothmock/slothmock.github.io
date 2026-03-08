@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Jordan 'sloth' Mock</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+</head>
+
+<body>
+    <main class="container">
+        <a class="back" href="../index.html">← Back</a>
+
+        <section class="consulting-hero card">
+            <h1>Practical consulting for small businesses, events, and indie projects</h1>
+            <p>
+                I offer straightforward advice for organisers, creators, developers, and
+                small businesses who need a clear second opinion.
+            </p>
+            <p>
+                Sessions are focused on solving real problems and helping you move forward
+                with practical decisions.
+            </p>
+
+            <div class="consulting-actions">
+                <stripe-buy-button
+                    buy-button-id="buy_btn_1T8nNEAFMptV30x8HIbZKgea"
+                    publishable-key="pk_live_51T6cciAFMptV30x8Bd8nfeyyUP03cyQYxo7bXPQ2AqdKwcPVvTjUF4kIDo1QJUPRGKgotAnK7mDUlZEsj2oFqtGU00WIAWAlQr">
+                </stripe-buy-button>
+
+                <stripe-buy-button
+                    buy-button-id="buy_btn_1T8mznAFMptV30x8LM0JYU85"
+                    publishable-key="pk_live_51T6cciAFMptV30x8Bd8nfeyyUP03cyQYxo7bXPQ2AqdKwcPVvTjUF4kIDo1QJUPRGKgotAnK7mDUlZEsj2oFqtGU00WIAWAlQr">
+                </stripe-buy-button>
+            </div>
+        </section>
+
+        <section class="consulting-help card">
+            <h2>What I Can Help With</h2>
+            <p>Common areas I advise on include:</p>
+            <ul>
+                <li>event planning and promotion</li>
+                <li>social media and audience growth</li>
+                <li>small business decision-making</li>
+                <li>pricing and operational strategy</li>
+                <li>indie software and digital projects</li>
+                <li>workflow and tooling decisions</li>
+            </ul>
+            <p>
+                If you're unsure whether your situation fits, feel free to reach out.
+            </p>
+        </section>
+
+        <section class="consulting-process card">
+            <h2>How It Works</h2>
+            <ol>
+                <li>Book a session using the links above</li>
+                <li>Provide a short description of what you'd like help with</li>
+                <li>I'll contact you using the email provided to arrange the meeting</li>
+            </ol>
+            <p>
+                Sessions are available <strong>online</strong> or <strong>in person</strong> (depending on
+                location.)
+            </p>
+        </section>
+
+        <section class="consulting-contact card">
+            <center>
+            <h2>Contact</h2>
+            <p>
+                If you're unsure which option is right for you, feel free to get in touch.
+            </p>
+            <a href="mailto:slothmock1@proton.me" class="button">Email Me</a>
+            <a href="https://x.com/slothmock1" class="button secondary">Message on X</a>
+            </center>
+        </section>
+    </main>
+</body>
+
+</html>
